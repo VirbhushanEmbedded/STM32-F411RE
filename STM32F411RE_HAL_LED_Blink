@@ -1,0 +1,57 @@
+# STM32F411RE HAL LED Blink
+
+This project demonstrates LED blinking on the STM32F411RE microcontroller using the STM32 HAL (Hardware Abstraction Layer) library.
+
+## Overview
+
+The program configures GPIO pin PA5 as an output and continuously toggles the onboard LED using the HAL GPIO functions. A delay is added between each toggle to create a visible blinking effect.
+
+## Hardware
+
+- STM32 Nucleo-F411RE
+- STM32F411RE Microcontroller
+- Onboard User LED (PA5)
+
+## Software
+
+- STM32CubeIDE
+- STM32 HAL Library
+- Embedded C
+
+## GPIO Configuration
+
+| Pin | Mode | Function |
+|------|------|----------|
+| PA5 | Output Push-Pull | User LED |
+
+## Working Principle
+
+1. Initialize the HAL Library.
+2. Configure the system clock.
+3. Initialize GPIOA pin PA5 as an output.
+4. Toggle the LED using `HAL_GPIO_TogglePin()`.
+5. Wait using `HAL_Delay()`.
+6. Repeat indefinitely.
+
+## Key HAL Functions Used
+
+- HAL_Init()
+- SystemClock_Config()
+- MX_GPIO_Init()
+- HAL_GPIO_TogglePin()
+- HAL_Delay()
+
+## Learning Objectives
+
+- Understanding STM32 HAL architecture
+- GPIO configuration using CubeMX/CubeIDE
+- Digital output control with HAL APIs
+- Embedded application development using STM32
+
+## Target Board
+
+STM32 Nucleo-F411RE
+
+## Author
+
+SID
